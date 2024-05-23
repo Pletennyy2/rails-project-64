@@ -22,9 +22,5 @@ test:
 
 production:
   <<: *default
-  database: for_rails_project
-  username: ruby
-  password: 7Rt@cV45
-  host: localhost
-  port: 5432
+  url: <%= ENV['DATABASE_URL'] %>
 
